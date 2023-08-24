@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NB - Loadingscreen</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="menu-container">
+      <div class="arrow-up">
+        <img src="img/ARROW_UP.png" width="1.75%" />
+        <span class="menu-text">VOLUME UP</span>
+      </div>
+      <div class="arrow-down">
+        <img src="img/ARROW_DOWN.png" width="1.75%" />
+        <span class="menu-text">VOLUME DOWN</span>
+      </div>
+      <div class="space">
+        <img src="img/SPACE.png" width="4%" />
+        <span class="menu-text" id="text">MUTE</span>
+      </div>
+    </div>
+
+    <p class="namePlaceholder" id="namePlaceholder">
+      Welcome <span class="name">Mr. Nobita</span>!
+      <span id="welcomeDisplay"></span>
+    </p>
+
+    <div class="loading-box">
+      <div class="loading">Loading...</div>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+
+    <!-- Video Background Start -->
+    <div class="bg-video noselect">
+      <iframe
+        width="150%"
+        height="150%"
+        src="https://www.youtube.com/embed/OrX8K0BUebU?controls=0&amp;showinfo=0&amp;rel=0&amp;autoplay=1&amp;loop=1&amp;mute=1"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <!-- Video Background End -->
+    <audio
+      id="song"
+      src="song/song.mp3"
+      autoplay
+      hidden="true"
+      loop="true"
+    ></audio>
+    <div class="container noselect">
+      <div class="img-center">
+        <!-- Server Logo start -->
+        <img src="logo/logo.png" alt="logo" class="noselect" width="300" />
+        <!-- Server Logo  end -->
+
+        <!-- Info tabs start -->
+        <div class="info-container">
+          <a href="#" class="card">
+            <i class="fa-solid fa-headset"></i>
+            <label>24/7 Support</label>
+            <div class="copy">
+              <i class="fa-solid fa-clone"></i>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <i class="fa-brands fa-discord"></i>
+            <label>Discord Server</label>
+            <div class="copy">
+              <i class="fa-solid fa-clone"></i>
+            </div>
+          </a>
+          <a href="#" class="card">
+            <i class="fa-solid fa-earth-americas"></i>
+            <label>inoverp.com</label>
+            <div class="copy">
+              <i class="fa-solid fa-clone"></i>
+            </div>
+          </a>
+        </div>
+        <!-- Info tabs end -->
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/81fd479d07.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
